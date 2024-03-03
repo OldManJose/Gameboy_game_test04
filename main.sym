@@ -1,0 +1,148 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy Z80-like CPU), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000000 L
+    _BGP_REG                                                       ****** GX
+    _LCDC_REG                                                      ****** GX
+    _NR10_REG                                                      ****** GX
+    _NR11_REG                                                      ****** GX
+    _NR12_REG                                                      ****** GX
+    _NR13_REG                                                      ****** GX
+    _NR14_REG                                                      ****** GX
+    _NR41_REG                                                      ****** GX
+    _NR42_REG                                                      ****** GX
+    _NR43_REG                                                      ****** GX
+    _NR44_REG                                                      ****** GX
+    _NR50_REG                                                      ****** GX
+    _NR51_REG                                                      ****** GX
+    _NR52_REG                                                      ****** GX
+    _SCX_REG                                                       ****** GX
+    _WX_REG                                                        ****** GX
+    _WY_REG                                                        ****** GX
+  7 __xinit__animation_tiles                                       001412 R
+  7 __xinit__animation_tiles2                                      001415 R
+  7 __xinit__church_map                                            000470 R
+  7 __xinit__e_animation_tiles                                     001418 R
+  7 __xinit__e_animation_tiles2                                    00141C R
+  7 __xinit__enemySet                                              001403 R
+  7 __xinit__frame                                                 001401 R
+  7 __xinit__from                                                  001404 R
+  7 __xinit__interior_map                                          000C88 R
+  7 __xinit__interior_tiles                                        0009D8 R
+  7 __xinit__offset                                                001400 R
+  7 __xinit__r_portrait_tile                                       000F58 R
+  7 __xinit__r_stat_001                                            00134C R
+  7 __xinit__r_stat_002                                            001388 R
+  7 __xinit__r_stat_003                                            0013C4 R
+  7 __xinit__scrollAviable                                         001402 R
+  7 __xinit__speedD                                                00140E R
+  7 __xinit__speedJ                                                001405 R
+  7 __xinit__sprites                                               0005D8 R
+  7 __xinit__tiles_church                                          000000 R
+  7 __xinit__w_dialogue_001                                        001298 R
+  7 __xinit__w_dialogue_002                                        0012D4 R
+  7 __xinit__w_dialogue_003                                        001310 R
+  0 _actualMap                                                     000572 GR
+  1 _animation_counter                                             000001 GR
+  2 _animation_tiles                                               001412 GR
+  2 _animation_tiles2                                              001415 GR
+  0 _backGroundCollision                                           000016 GR
+  1 _boost                                                         000006 GR
+  1 _carryRow                                                      000017 GR
+  2 _church_map                                                    000470 GR
+  1 _dCounter                                                      00000C GR
+  0 _dash                                                          000246 GR
+  1 _dashAviable                                                   000015 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy Z80-like CPU), page 2.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  1 _dashCoolDown                                                  000011 GR
+  0 _door                                                          000015 GR
+  1 _downPCounter                                                  000010 GR
+  1 _ePosX                                                         000008 GR
+  1 _ePosY                                                         000009 GR
+  1 _e_animation_counter                                           00000E GR
+  2 _e_animation_tiles                                             001418 GR
+  2 _e_animation_tiles2                                            00141C GR
+  1 _e_frame_count                                                 00000D GR
+  0 _enemyAttack                                                   0002FD GR
+  2 _enemySet                                                      001403 GR
+  1 _faceing                                                       000013 GR
+  0 _fadeIn                                                        0004C4 GR
+  0 _fadeOut                                                       00047B GR
+  1 _floorPosition                                                 000007 GR
+  2 _frame                                                         001401 GR
+  1 _frame_count                                                   000000 GR
+  2 _from                                                          001404 GR
+  0 _hitSurface                                                    0000D3 GR
+  1 _i                                                             00000A GR
+  1 _ii                                                            000005 GR
+  2 _interior_map                                                  000C88 GR
+  2 _interior_tiles                                                0009D8 GR
+    _joypad                                                        ****** GX
+  0 _jump                                                          0000E1 GR
+  1 _jumpAllow                                                     000014 GR
+  0 _loadDialogue                                                  0005D5 GR
+  0 _loadNewBackGround                                             000500 GR
+  0 _main                                                          000625 GR
+  2 _offset                                                        001400 GR
+  1 _onAnim                                                        000012 GR
+  1 _pPosX                                                         000002 GR
+  1 _pPosY                                                         000003 GR
+  0 _performtDelay                                                 000000 GR
+  2 _r_portrait_tile                                               000F58 GR
+  2 _r_stat_001                                                    00134C GR
+  2 _r_stat_002                                                    001388 GR
+  2 _r_stat_003                                                    0013C4 GR
+  1 _reDash                                                        000016 GR
+  1 _sCounter                                                      00000F GR
+  1 _sX                                                            00000B GR
+  2 _scrollAviable                                                 001402 GR
+  0 _setSprite                                                     00038C GR
+  0 _setWindowStat                                                 000604 GR
+    _set_bkg_data                                                  ****** GX
+    _set_bkg_tiles                                                 ****** GX
+    _set_sprite_data                                               ****** GX
+    _set_win_data                                                  ****** GX
+    _set_win_tiles                                                 ****** GX
+    _shadow_OAM                                                    ****** GX
+  2 _speedD                                                        00140E GR
+  2 _speedJ                                                        001405 GR
+  2 _sprites                                                       0005D8 GR
+  1 _tile_anim_count                                               000004 GR
+  2 _tiles_church                                                  000000 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy Z80-like CPU), page 3.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  0 _updateAnim                                                    0003E8 GR
+  0 _updateEnemyAnim                                               000441 GR
+  2 _w_dialogue_001                                                001298 GR
+  2 _w_dialogue_002                                                0012D4 GR
+  2 _w_dialogue_003                                                001310 GR
+    _wait_vbl_done                                                 ****** GX
+    _waitpad                                                       ****** GX
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy Z80-like CPU), page 4.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size    9C2   flags    0
+   1 _DATA                                      size     18   flags    0
+   2 _INITIALIZED                               size   1420   flags    0
+   3 _DABS                                      size      0   flags    8
+   4 _HOME                                      size      0   flags    0
+   5 _GSINIT                                    size      0   flags    0
+   6 _GSFINAL                                   size      0   flags    0
+   7 _INITIALIZER                               size   1420   flags    0
+   8 _CABS                                      size      0   flags    8
+
